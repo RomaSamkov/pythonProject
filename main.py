@@ -1,7 +1,4 @@
-from keyword import kwlist
+name = 'Python' * 10
 
-print(kwlist)
-name = 'Python'
-
-print('Hello World', name)
+print(len(name))
 
