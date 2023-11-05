@@ -13,13 +13,22 @@ student = "coder"
 #     print(f"Hello {user_name}!")
 
 
-cost = int(input('Fill your sum \n'))
-if cost > 1000:
-    cost = cost - cost * 0.1
-elif cost > 500:
-    cost = cost - cost * 0.05
-elif cost > 100:
-    cost = cost - cost * 0.03
+# cost = int(input('Fill your sum \n'))
+# if cost > 1000:
+#     cost = cost - cost * 0.1
+# elif cost > 500:
+#     cost = cost - cost * 0.05
+# elif cost > 100:
+#     cost = cost - cost * 0.03
+#
+#
+# print(cost)
 
+line = input('Write the string: \n')
 
-print(cost)
+# if bool(line):
+#     print(line)
+# else:
+#     print(None)
+
+print(line if line else None)
