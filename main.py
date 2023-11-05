@@ -24,11 +24,14 @@ student = "coder"
 #
 # print(cost)
 
-line = input('Write the string: \n')
+# line = input('Write the string: \n')
+#
+# # if bool(line):
+# #     print(line)
+# # else:
+# #     print(None)
+#
+# print(line if line else None)
 
-# if bool(line):
-#     print(line)
-# else:
-#     print(None)
-
-print(line if line else None)
+for i in range(10):
+    print(i)
