@@ -33,5 +33,6 @@ student = "coder"
 #
 # print(line if line else None)
 
-for i in range(10):
-    print(i)
+for i in range(101):
+    if i % 2 == 0:
+        print(i)
