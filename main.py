@@ -34,5 +34,9 @@ student = "coder"
 # print(line if line else None)
 
 for i in range(109):
-    if i % 2 == 0 and i != 0:
+    if i != 0 and i % 2 == 0:
         print(i)
+
+for word in 'hello':
+    r = 'hello'.replace('l','s')
+    print(r)
