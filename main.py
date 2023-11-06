@@ -41,7 +41,19 @@ student = "coder"
 #     r = 'hello'.replace('l','s')
 #     print(r)
 
-for el in reversed(range(105)):
-    if el % 5 == 0:
-        print(el)
-        break
+# for el in reversed(range(105)):
+#     if el % 5 == 0:
+#         print(el)
+#         break
+
+sum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sum2 = [4, 2, 3, 1, 5, 6, 11, 8, 9, 7, 10]
+# sum.append('item')
+# sum.extend(sum2)
+# el = sum.pop(6)
+# print(el)
+sum.reverse()
+sum2.sort()
+# sum2.sort(reverse=True)
+print(sum)
+print(sum2)
