@@ -52,8 +52,13 @@ sum2 = [4, 2, 3, 1, 5, 6, 11, 8, 9, 7, 10]
 # sum.extend(sum2)
 # el = sum.pop(6)
 # print(el)
-sum.reverse()
-sum2.sort()
-# sum2.sort(reverse=True)
+# sum.reverse()
+# sum2.sort()
+# # sum2.sort(reverse=True)
+# print(sum)
+# print(sum2)
+
+for num in sum:
+    if num % 2 == 0:
+        sum.remove(num)
 print(sum)
-print(sum2)
