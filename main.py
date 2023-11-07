@@ -73,16 +73,27 @@ sum2 = [4, 2, 3, 1, 5, 6, 11, 8, 9, 7, 10]
 #     sum[i] = sum[i] ** 2
 # print(sum)
 
-maximum = sum2[0]
-for i in range(len(sum2)):
-    if sum2[i] > maximum:
-        maximum = sum2[i]
-print(maximum)
-# V2
-print(max(sum2))
-# V3
-print(sorted(sum2)[-1])
-# V4
-sum2.sort()
-print(sum2[-1])
+# maximum = sum2[0]
+# for i in range(len(sum2)):
+#     if sum2[i] > maximum:
+#         maximum = sum2[i]
+# print(maximum)
+# # V2
+# print(max(sum2))
+# # V3
+# print(sorted(sum2)[-1])
+# # V4
+# sum2.sort()
+# print(sum2[-1])
 
+
+obj = {'key': 'value','key2': 'value2'}
+# print(obj['key'])
+# print(obj)
+
+# for k , v in obj.items():
+#     print(f'{k} and {v}')
+
+# print(obj.pop('key'))
+# print(obj.values())
+# print(obj.keys())
