@@ -97,3 +97,20 @@ obj = {'key': 'value','key2': 'value2'}
 # print(obj.pop('key'))
 # print(obj.values())
 # print(obj.keys())
+
+some_list = ['JavaScript', 'Python', 'SQL', 'React','JavaScript', 'Python']
+
+answer = {}
+
+for e in some_list:
+    if e in answer.keys():
+        answer[e] += 1
+    else:
+        answer[e] = 1
+print(answer)
+
+# V2
+
+for e in some_list:
+    answer[e] = some_list.count(e)
+print(answer)
