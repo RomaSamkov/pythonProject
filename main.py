@@ -58,7 +58,17 @@ sum2 = [4, 2, 3, 1, 5, 6, 11, 8, 9, 7, 10]
 # print(sum)
 # print(sum2)
 
+# for num in sum:
+#     if num % 2 == 0:
+#         sum.remove(num)
+# print(sum)
+
+list_square = []
 for num in sum:
-    if num % 2 == 0:
-        sum.remove(num)
+    list_square.append(num**2)
+print(list_square)
+print('*' * 30)
+
+for i in range(len(sum)):
+    sum[i] = sum[i] ** 2
 print(sum)
