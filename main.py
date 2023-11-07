@@ -115,8 +115,16 @@ obj = {'key': 'value','key2': 'value2'}
 #     answer[e] = some_list.count(e)
 # print(answer)
 
-some_dict = {11:'JavaScript', 2:'Python', 33:'SQL', 4:'React', 5:'JavaScript', 88:'Python'}
+some_dict = {11:'JavaScript', 'string':'Python', 33:'SQL', 'some string':'React', 5:'JavaScript', 88:'Python'}
 
-for k, val in some_dict.items():
-    if k % 2 == 0:
-        print(val)
+# for k, val in some_dict.items():
+#     if k % 2 == 0:
+#         print(val)
+#
+# dictionary = {}.fromkeys(range(10), "Any value")
+# print('D: ', dictionary)
+some_dict_copy = some_dict.copy()
+for k in some_dict:
+    if type(k) == str:
+        del some_dict_copy[k]
+print(some_dict_copy)
