@@ -98,19 +98,25 @@ obj = {'key': 'value','key2': 'value2'}
 # print(obj.values())
 # print(obj.keys())
 
-some_list = ['JavaScript', 'Python', 'SQL', 'React','JavaScript', 'Python']
+# some_list = ['JavaScript', 'Python', 'SQL', 'React','JavaScript', 'Python']
+#
+# answer = {}
+#
+# for e in some_list:
+#     if e in answer.keys():
+#         answer[e] += 1
+#     else:
+#         answer[e] = 1
+# print(answer)
+#
+# # V2
+#
+# for e in some_list:
+#     answer[e] = some_list.count(e)
+# print(answer)
 
-answer = {}
+some_dict = {11:'JavaScript', 2:'Python', 33:'SQL', 4:'React', 5:'JavaScript', 88:'Python'}
 
-for e in some_list:
-    if e in answer.keys():
-        answer[e] += 1
-    else:
-        answer[e] = 1
-print(answer)
-
-# V2
-
-for e in some_list:
-    answer[e] = some_list.count(e)
-print(answer)
+for k, val in some_dict.items():
+    if k % 2 == 0:
+        print(val)
