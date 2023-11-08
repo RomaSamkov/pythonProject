@@ -123,8 +123,9 @@ some_dict = {11:'JavaScript', 'string':'Python', 33:'SQL', 'some string':'React'
 #
 # dictionary = {}.fromkeys(range(10), "Any value")
 # print('D: ', dictionary)
-some_dict_copy = some_dict.copy()
-for k in some_dict:
-    if type(k) == str:
-        del some_dict_copy[k]
-print(some_dict_copy)
+# some_dict_copy = some_dict.copy()
+# for k in some_dict:
+#     if type(k) == str:
+#         del some_dict_copy[k]
+# print(some_dict_copy)
+
