@@ -14,8 +14,15 @@
 # r = func_max([1,2,3,4,5,6,7,11])
 # print(r)
 
-def func_char(string):
-    return len(string)
+# def func_char(string):
+#     return len(string)
+#
+# result = func_char('JavaScript and Python')
+# print(result)
 
-result = func_char('JavaScript and Python')
-print(result)
+def func_pow(n,pow):
+    if pow > 0 and n  > 0:
+        return n**pow
+    return 'not minus'
+
+print(func_pow(2,2))
