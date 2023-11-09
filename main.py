@@ -135,5 +135,9 @@ set_s = {1,'Python', 'JavaScript'}
 # print(some_set)
 
 some_tuple = (1, 2, 3, 4, ['Python', 'JavaScript'])
-print(some_tuple.count(1))
-print(some_tuple.index(1))
+# print(some_tuple.count(1))
+# print(some_tuple.index(1))
+some_tuple1 = (('Python', 1), ('JavaScript', 2), ('SQL', 3), ('TypeScript', 4))
+
+for l, pl in some_tuple1:
+    print(f'{l= } and {pl= }')
