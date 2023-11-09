@@ -129,3 +129,11 @@ some_dict = {11:'JavaScript', 'string':'Python', 33:'SQL', 'some string':'React'
 #         del some_dict_copy[k]
 # print(some_dict_copy)
 
+some_set = {1,2,3,4}
+set_s = {1,'Python', 'JavaScript'}
+# print(some_set.difference(set_s))
+# print(some_set)
+
+some_tuple = (1, 2, 3, 4, ['Python', 'JavaScript'])
+print(some_tuple.count(1))
+print(some_tuple.index(1))
