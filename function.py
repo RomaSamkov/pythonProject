@@ -27,6 +27,12 @@
 #
 # print(func_pow(2,2))
 
-l = lambda x,y : x**y
+# l = lambda x,y : x**y
+#
+# print(l(2,8))
 
-print(l(2,8))
+def foo(n):
+    if n >= 1:
+        foo(n-1)
+        print(n)
+foo(12)
