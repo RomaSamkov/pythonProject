@@ -26,3 +26,7 @@
 #     return 'not minus'
 #
 # print(func_pow(2,2))
+
+l = lambda x,y : x**y
+
+print(l(2,8))
