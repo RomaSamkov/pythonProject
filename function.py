@@ -20,9 +20,9 @@
 # result = func_char('JavaScript and Python')
 # print(result)
 
-def func_pow(n,pow):
-    if pow > 0 and n  > 0:
-        return n**pow
-    return 'not minus'
-
-print(func_pow(2,2))
+# def func_pow(n,pow):
+#     if pow > 0 and n  > 0:
+#         return n**pow
+#     return 'not minus'
+#
+# print(func_pow(2,2))
