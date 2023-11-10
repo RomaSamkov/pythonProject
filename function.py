@@ -31,8 +31,15 @@
 #
 # print(l(2,8))
 
-def foo(n):
-    if n >= 1:
-        foo(n-1)
-        print(n)
-foo(12)
+# def foo(n):
+#     if n >= 1:
+#         foo(n-1)
+#         print(n)
+# foo(88)
+
+def func(h,w):
+    return h*w
+print(func(2,2))
+
+func_l = lambda h,w: h*w
+print(func_l(4,8))
