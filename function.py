@@ -43,3 +43,14 @@
 #
 # func_l = lambda h,w: h*w
 # print(func_l(4,8))
+
+def func_divide(n, d):
+    try:
+        r = n / d
+    except:
+        return 'Dont divide to zero'
+
+    return r
+
+
+print(func_divide(1, 0))
