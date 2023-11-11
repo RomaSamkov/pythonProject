@@ -55,20 +55,31 @@
 #
 # print(func_divide(1, 0))
 
-def name_month(n):
+# def name_month(n):
+#     try:
+#         month_index = n - 1
+#         m = []
+#         import calendar
+#         for month in calendar.month_name:
+#             m.append(month)
+#
+#         m.pop(0) #remove the empty value
+#         return m[month_index]
+#     except TypeError:
+#         return  'Write integer'
+#     except IndexError:
+#         return  "Write month in 1 and 12"
+#
+# print(name_month(12))
+
+def func(l):
     try:
-        month_index = n - 1
-        m = []
-        import calendar
-        for month in calendar.month_name:
-            m.append(month)
-
-        m.pop(0) #remove the empty value
-        return m[month_index]
+        return  len(l[:]) == len(set(l))
     except TypeError:
-        return  'Write integer'
-    except IndexError:
-        return  "Write month in 1 and 12"
+        return 'Only type'
 
-print(name_month(12))
+# print(func([1, 2, 3, 4, 6]))
+print(func({}))
+
+
 
