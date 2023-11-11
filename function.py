@@ -72,11 +72,11 @@
 #
 # print(name_month(12))
 
-def func(l):
-    try:
-        return  len(l[:]) == len(set(l))
-    except TypeError:
-        return 'Only type'
+# def func(l):
+#     try:
+#         return  len(l[:]) == len(set(l))
+#     except TypeError:
+#         return 'Only type'
 
 # print(func([1, 2, 3, 4, 6]))
 print(func({}))
