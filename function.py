@@ -37,9 +37,9 @@
 #         print(n)
 # foo(88)
 
-def func(h,w):
-    return h*w
-print(func(2,2))
-
-func_l = lambda h,w: h*w
-print(func_l(4,8))
+# def func(h,w):
+#     return h*w
+# print(func(2,2))
+#
+# func_l = lambda h,w: h*w
+# print(func_l(4,8))
