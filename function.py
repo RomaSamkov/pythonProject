@@ -44,13 +44,31 @@
 # func_l = lambda h,w: h*w
 # print(func_l(4,8))
 
-def func_divide(n, d):
+# def func_divide(n, d):
+#     try:
+#         r = n / d
+#     except:
+#         return 'Dont divide to zero'
+#
+#     return r
+#
+#
+# print(func_divide(1, 0))
+
+def name_month(n):
     try:
-        r = n / d
-    except:
-        return 'Dont divide to zero'
+        month_index = n - 1
+        m = []
+        import calendar
+        for month in calendar.month_name:
+            m.append(month)
 
-    return r
+        m.pop(0) #remove the empty value
+        return m[month_index]
+    except TypeError:
+        return  'Write integer'
+    except IndexError:
+        return  "Write month in 1 and 12"
 
+print(name_month(12))
 
-print(func_divide(1, 0))
