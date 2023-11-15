@@ -6,8 +6,10 @@
 
 import datetime
 import sys, os, platform
+from math import sqrt, ceil
 
-print(datetime.datetime.now().time())
-# print(sys.path)
-print(os.name)
-print(platform.system())
+# print(datetime.datetime.now().time())
+# # print(sys.path)
+# print(os.name)
+# print(platform.system())
+print(ceil(sqrt(25)))
