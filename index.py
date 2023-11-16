@@ -1,27 +1,32 @@
-class Robot:
-    name = None
-    age = None
-    isAI = None
+class Car:
+    __year = None
+    __city = None
 
-    def __init__(self, robo_name, robo_age, robo_is_ai):
-        self.set_data(robo_name, robo_age, robo_is_ai)
-        self.get_data()
+    def __init__(self, year, city):
+        self.year = year
+        self.city = city
+        # self.get_info()
 
-    def set_data(self, robo_name, robo_age, robo_is_ai):
-        self.name = robo_name
-        self.age = robo_age
-        self.isAI = robo_is_ai
-
-    def get_data(self):
-        print(f'{self.name} age: {self.age} and AI: {self.isAI}')
+    def get_info(self):
+        print(f'Car is age: {self.year} and production in: {self.city}', sep='')
 
 
-robot1 = Robot('Kevin' ,13, True)
-# robot1.set_data('Kevin' ,13, True)
-robot2 = Robot('Bob', 22, False)
-# robot2.name = 'Bob'
-# robot2.age = 22
-# robot2.isAI = False
+class Cooper(Car):
+    pass
 
-# robot1.get_data()
-# robot2.get_data()
+
+class Auto(Car):
+    wheels = None
+    def __init__(self, year, city, wheels):
+        super(Auto, self).__init__(year, city)
+        self.wheels = wheels
+
+    def get_info(self):
+        print(f'wheels: {self.wheels}')
+        super().get_info()
+
+
+cooper = Cooper(12, 'LA')
+cooper.get_info()
+auto = Auto(8, 'NewYork',8)
+auto.get_info()
