@@ -1,20 +1,23 @@
-# try:
-#     with open('data/file.txt', 'r') as file:
-#         print(file.read())
-# except FileNotFoundError:
-#     print('File not found')
+class Robot:
+    name = None
+    age = None
+    isAI = None
 
-import datetime
-import sys, os, platform
-# from math import sqrt, ceil
-import myModule
+    def set_data(self, robo_name, robo_age, robo_isAI):
+        self.name = robo_name
+        self.age = robo_age
+        self.isAI = robo_isAI
 
-# print(datetime.datetime.now().time())
-# # print(sys.path)
-# print(os.name)
-# print(platform.system())
-# print(ceil(sqrt(25)))
+    def get_data(self):
+        print(f'{self.name} age: {self.age} and AI: {self.isAI}')
 
-myModule.hello()
-print(myModule.name)
-myModule.sum_num(1, 2,  3)
+
+robot1 = Robot()
+robot1.set_data('Kevin' ,13, True)
+robot2 = Robot()
+robot2.name = 'Bob'
+robot2.age = 22
+robot2.isAI = False
+
+robot1.get_data()
+robot2.get_data()
