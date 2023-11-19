@@ -16,3 +16,9 @@ class Car:
 
 car = Car()
 car.get_drive()
+
+print('''Text row
+and another text row''')
+
+s = 'Hello, nice to meet you, \n your name is %s and your job is %s '
+print(s %('Kevin','Developer'))
