@@ -14,6 +14,9 @@ class Car:
     def get_drive(self):
         print(f'Hello {name} your car name is {self.name} !')
 
+    def git(self):
+        print('Github')
+
 car = Car()
 car.get_drive()
 
