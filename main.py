@@ -6,3 +6,11 @@ print(fruits[0:3])
 print(f'{numbers=}')
 print(f'{fruits=}')
 
+
+def intro(**kwargs):
+    for key, value in kwargs.items():
+        print(key)
+        print(value)
+
+
+intro(name="John", age=30, city='New York')
